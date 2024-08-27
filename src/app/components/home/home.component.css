@@ -1,0 +1,35 @@
+.llamada{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70vh;
+}
+.local{
+    width: 500px;
+}
+.remote{
+    width: 500px;
+}
+.container-fluid{
+    & span{
+        display: inline-block;
+        margin: auto;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+}
+.botonera{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    & button{
+        margin-left: 20px;
+    }
+    .form-floating{
+        width: 40%;
+    }
+}

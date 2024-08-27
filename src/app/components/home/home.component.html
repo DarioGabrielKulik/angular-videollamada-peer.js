@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+  <div class="container-fluid text-center">
+    <span class="navbar-brand">VIDEO LLAMADAS</span>
+  </div>
+</nav>
+<div class="llamada">
+    <video #localVideo autoplay muted class="local"></video>
+    <video #remoteVideo autoplay class="remote"></video>
+  </div>
+  <div class="container text-center">
+    <p>Este id se coloca en la otra pantalla: {{id}}</p>
+  </div>
+  <div class="container botonera">
+    <div class="form-floating">
+      <input type="text" #remotePeerIdInput class="form-control" id="floatingPassword" placeholder="ingresa el ID" autocomplete="off">
+      <label for="floatingPassword">Ingresa el Id</label>
+    </div>
+   
+  <button (click)="startCall(remotePeerIdInput.value)" class="btn btn-outline-success">Comenzar Llamada</button>
+  <button (click)="endCall()" class="btn btn-outline-danger">Finalizar Llamada</button>
+
+</div>
